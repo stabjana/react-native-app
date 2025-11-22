@@ -6,7 +6,7 @@ const Index = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.headline}>All my contacts</Text>
-      <Link>Go to Profile</Link>
+      <Link href={"/profile" as any} style={styles.link}>Go to Profile</Link>
     </View>
   )
 }
@@ -24,5 +24,14 @@ const styles = StyleSheet.create({
         fontSize: 24,
         fontWeight: 'bold',
         color: '#333',
+    },
+    link:{
+        marginTop: 20,
+        fontSize: 18,
+        backgroundColor: 'blue',
+        color: 'white',
+        padding: 10,
+        borderRadius: 5,
+        boxShadow: '2px 2px 5px #333',
     }
 })
